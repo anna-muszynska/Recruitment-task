@@ -1,0 +1,155 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
+  color: #3a3a3a;
+}
+
+h1 {
+  font-size: 48px;
+  margin: 10px 0px;
+}
+
+h2 {
+  font-size: 30px;
+  letter-spacing: -1px;
+}
+
+h2 span {
+  color: #185b61;
+}
+
+.container {
+  position: absolute;
+  top: 0px;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+form {
+  padding: 10px;
+  min-width: 280px;
+  max-width: 600px;
+  height: 600px;
+  width: 100%;
+  background-color: #80b0b4;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  text-align: center;
+  margin: 15px 0px;
+}
+
+main {
+  padding: 20px;
+  text-align: justify;
+  letter-spacing: -1px;
+  word-spacing: -1px;
+  flex-grow: 1;
+  font-size: 16px;
+}
+
+.inputs {
+  all: unset;
+  border-style: none;
+  background-color: inherit;
+  border-bottom: 3px solid #185b61;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+#input_email {
+  width: 60%;
+
+  margin-right: 30px;
+}
+
+#input_name {
+  width: 34%;
+}
+
+::placeholder {
+  color: #185b61;
+}
+
+#div_checkbox {
+  display: flex;
+}
+
+#input_checkbox {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  margin-top: 3px;
+}
+
+#send {
+  text-decoration: none;
+  text-align: center;
+  background-color: #185b61;
+  width: 40%;
+  height: 70px;
+  font-size: 48px;
+  color: #cbe9ec;
+  margin-bottom: 10px;
+  padding: 0px;
+}
+
+@media (max-width: 620px) {
+  h1 {
+    font-size: 40px;
+    margin: 10px 0px;
+  }
+
+  h2 {
+    font-size: 18px;
+    letter-spacing: -1px;
+    margin-top: 20px;
+  }
+
+  main {
+    font-size: 12px;
+  }
+
+  .inputs {
+    font-size: 20px;
+  }
+
+  #input_email {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  #input_name {
+    width: 100%;
+  }
+
+  #input_checkbox {
+    width: 30px;
+    height: 30px;
+  }
+
+  #send {
+    height: 40px;
+    font-size: 20px;
+    line-height: 40px;
+  }
+} ;

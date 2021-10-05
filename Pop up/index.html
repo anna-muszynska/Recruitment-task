@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+    <title>Form</title>
+  </head>
+
+  <body>
+    <div id="container" class="container hidden">
+      <form>
+        <header>
+          <h1>WITAJ!</h1>
+          <h2>
+            WYPEŁNIJ FORMULARZ I ZGARNIJ<br />
+            <span>KUPON RABATOWY</span> DO WYKORZYSTANIA<br />
+            PRZY NAJBLIŻSZYCH ZAKUPACH
+          </h2>
+        </header>
+        <main>
+          <input
+            id="input_email"
+            class="inputs"
+            type="email"
+            placeholder="EMAIL"
+          />
+          <input
+            id="input_name"
+            class="inputs"
+            type="text"
+            placeholder="IMIĘ"
+          />
+          <div id="div_checkbox">
+            <div>
+              <input id="input_checkbox" type="checkbox" checked />
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+              tenetur similique quae excepturi saepe, deserunt, provident quam
+              quos animi enim quia commodi maxime, sapiente itaque ab hic
+              deleniti adipisci consectetur. Lorem ipsum dolor sit amet
+              consectetur.
+            </p>
+          </div>
+        </main>
+        <a id="send" type="submit" href="./thankyou.html">wyślij</a>
+      </form>
+    </div>
+  </body>
+</html>
