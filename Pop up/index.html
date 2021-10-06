@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -17,42 +17,40 @@
 
   <body>
     <div id="container" class="container hidden">
-      <form>
+      <form action="./thankyou.html">
         <header>
-          <h1>WITAJ!</h1>
-          <h2>
-            WYPEŁNIJ FORMULARZ I ZGARNIJ<br />
-            <span>KUPON RABATOWY</span> DO WYKORZYSTANIA<br />
-            PRZY NAJBLIŻSZYCH ZAKUPACH
-          </h2>
+          <h1>Witaj!</h1>
+          <p>
+            <span class="line">Wypełnij formularz i zgarnij</span>
+            <span class="line"><span class="color">kupon rabatowy </span></span>
+            do wykorzystania przy najbliższych zakupach
+          </p>
         </header>
         <main>
-          <input
-            id="input_email"
-            class="inputs"
-            type="email"
-            placeholder="EMAIL"
-          />
-          <input
-            id="input_name"
-            class="inputs"
-            type="text"
-            placeholder="IMIĘ"
-          />
+          <div class="field">
+            <input id="input_email" class="inputs" type="email" />
+            <label class="inputs_label" id="label_email" for="input_email"
+              >Email</label
+            >
+          </div>
+          <div class="field">
+            <input id="input_name" class="inputs" type="text" />
+            <label class="inputs_label" id="label_name" for="input_name"
+              >Imię</label
+            >
+          </div>
           <div id="div_checkbox">
-            <div>
-              <input id="input_checkbox" type="checkbox" checked />
-            </div>
-            <p>
+            <input id="input_checkbox" type="checkbox" checked />
+            <label for="input_checkbox">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
               tenetur similique quae excepturi saepe, deserunt, provident quam
               quos animi enim quia commodi maxime, sapiente itaque ab hic
               deleniti adipisci consectetur. Lorem ipsum dolor sit amet
               consectetur.
-            </p>
+            </label>
           </div>
         </main>
-        <a id="send" type="submit" href="./thankyou.html">wyślij</a>
+        <button id="send" type="submit">wyślij</button>
       </form>
     </div>
   </body>

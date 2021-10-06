@@ -1,10 +1,14 @@
 * {
   margin: 0px;
   padding: 0px;
-  box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
   font-weight: lighter;
   color: #3a3a3a;
+  box-sizing: border-box;
 }
 
 #container {
@@ -39,6 +43,7 @@ header {
   font-size: 48px;
   margin: 10px 0px;
   margin-top: 40px;
+  text-transform: uppercase;
 }
 
 main {
@@ -46,6 +51,7 @@ main {
   letter-spacing: -1px;
   flex-grow: 1;
   margin-top: 50px;
+  text-transform: uppercase;
 }
 
 @media (max-width: 620px) {

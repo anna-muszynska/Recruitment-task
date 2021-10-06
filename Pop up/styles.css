@@ -1,24 +1,35 @@
 * {
   margin: 0px;
   padding: 0px;
-  box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: lighter;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
   color: #3a3a3a;
+  box-sizing: border-box;
+  --darkgreen: #185b61;
 }
 
 h1 {
   font-size: 48px;
   margin: 10px 0px;
+  text-transform: uppercase;
+  font-weight: lighter;
 }
 
-h2 {
+header p {
   font-size: 30px;
   letter-spacing: -1px;
+  text-transform: uppercase;
 }
 
-h2 span {
-  color: #185b61;
+span.color {
+  color: var(--darkgreen);
+}
+
+span.line {
+  display: inline-block;
 }
 
 .container {
@@ -70,14 +81,13 @@ main {
   all: unset;
   border-style: none;
   background-color: inherit;
-  border-bottom: 3px solid #185b61;
+  border-bottom: 3px solid var(--darkgreen);
   font-size: 30px;
   margin-bottom: 30px;
 }
 
 #input_email {
   width: 60%;
-
   margin-right: 30px;
 }
 
@@ -85,8 +95,29 @@ main {
   width: 34%;
 }
 
-::placeholder {
-  color: #185b61;
+.field {
+  position: relative;
+  display: inline;
+}
+
+.inputs_label {
+  left: 0em;
+  position: absolute;
+  top: -0.5em;
+  transition: all 0.1s linear;
+  color: var(--darkgreen);
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.inputs:focus + label {
+  font-size: 1.15em;
+  top: -2.1em;
+}
+
+.up {
+  font-size: 1.15em;
+  top: -2.1em;
 }
 
 #div_checkbox {
@@ -98,13 +129,12 @@ main {
   width: 40px;
   height: 40px;
   margin-right: 10px;
-  margin-top: 3px;
 }
 
 #send {
-  text-decoration: none;
+  border-style: none;
   text-align: center;
-  background-color: #185b61;
+  background-color: var(--darkgreen);
   width: 40%;
   height: 70px;
   font-size: 48px;
@@ -119,7 +149,7 @@ main {
     margin: 10px 0px;
   }
 
-  h2 {
+  header p {
     font-size: 18px;
     letter-spacing: -1px;
     margin-top: 20px;
@@ -140,6 +170,20 @@ main {
 
   #input_name {
     width: 100%;
+  }
+
+  .inputs_label {
+    font-size: 22px;
+  }
+
+  .inputs:focus + label {
+    font-size: 1.15em;
+    top: -1.9em;
+  }
+
+  .up {
+    font-size: 1.15em;
+    top: -1.9em;
   }
 
   #input_checkbox {
