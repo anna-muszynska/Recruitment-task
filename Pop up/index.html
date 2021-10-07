@@ -28,7 +28,7 @@
         </header>
         <main>
           <div class="field">
-            <input id="input_email" class="inputs" type="email" />
+            <input id="input_email" class="inputs" type="email" required />
             <label class="inputs_label" id="label_email" for="input_email"
               >Email</label
             >
@@ -39,16 +39,17 @@
               >Imię</label
             >
           </div>
-          <div id="div_checkbox">
-            <input id="input_checkbox" type="checkbox" checked />
-            <label for="input_checkbox">
+          <label for="input_checkbox">
+            <input id="input_checkbox" type="checkbox" required />
+            <span class="checkmark"></span>
+            <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
               tenetur similique quae excepturi saepe, deserunt, provident quam
               quos animi enim quia commodi maxime, sapiente itaque ab hic
               deleniti adipisci consectetur. Lorem ipsum dolor sit amet
               consectetur.
-            </label>
-          </div>
+            </p>
+          </label>
         </main>
         <button id="send" type="submit">wyślij</button>
       </form>
